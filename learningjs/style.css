@@ -1,0 +1,34 @@
+body {
+    background-image: url("/images/criticalrange.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#counted {
+    border: 0px solid;
+    display: block;
+    font-size: xx-large;
+    text-align: center;
+}
+#increase {
+    border: 0px solid;
+    font-size: x-large;
+    text-align: center;
+}
+#decrease {
+    border: 0px solid;
+    font-size: x-large;
+    text-align: center;
+}
+#reset {
+    border: 0px solid;
+    font-size: x-large;
+    text-align: center;
+}
+.calcButtons {
+    border:0px solid;
+    font-size: xxx-large;
+    width:100px;
+    text-align: center;
+}

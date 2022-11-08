@@ -1,0 +1,36 @@
+body {
+    background-image: url("/images/criticalrange.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+h1 {
+    background: linear-gradient(skyblue,red);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Dancing Script', cursive;
+}
+#p2best {
+    background: linear-gradient(skyblue,red);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #0000FF;
+    border-style: inset;
+    border-width: 5px;
+    border-color:turquoise;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+#youcandoit {
+    background: linear-gradient(skyblue,red);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: green;
+    color: turquoise;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: dotted underline;
+    font-size: 30px;
+}
