@@ -45,10 +45,14 @@ document.getElementById("tenThousand").onclick = function () {
     document.getElementById("randomizerResult").innerHTML = "Result: " + randomizerTenThousand;
 }
 
-let add1 = 0;
+
+let newResult;
 
 
 document.getElementById("calcButton1").onclick = function() {
-    add1 = 1;
-    document.getElementById("calcInput").innerHTML = add1;
+    let oldResult = document.getElementById("calcResult").textContent;
+    newResult = oldResult.slice(oldResult.indexOf(" ") + 1) + 1;
+    document.getElementById("calcResult").innerHTML = "Result: " + newResult;
+    calcbutton1()
 }
+console.log(calcbutton1());
