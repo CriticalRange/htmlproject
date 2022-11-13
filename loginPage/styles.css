@@ -1,17 +1,35 @@
 body {
-    background-color: turquoise;
+    background: linear-gradient(to bottom, turquoise, rgb(121, 10, 196));
     background-position: cover;
     background-attachment: fixed;
 }
 h2 {
-    color:black
+    color: rgb(0, 217, 255);
+    text-transform: capitalize;
+    text-indent: 0px;
+    line-height: 5px;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
 }
 .container {
-    border: medium solid red;
+    background: linear-gradient(to bottom, turquoise, rgb(121, 10, 196));
+    border: medium solid blue;
     max-width: max-content;
     height: 60vh;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
     padding: 18vh;
+    outline-style: outset;
+    outline-width: medium;
+    outline-color: rgb(25, 23, 173);
+}
+label {
+    font-size: x-large;
+    color: rgb(0, 217, 255);
+    margin-left: 0px;
+    display: inline-block;
+}
+#rememberMeLabel {
+    font-size: normal;
 }
