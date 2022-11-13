@@ -1,0 +1,17 @@
+body {
+    background-color: turquoise;
+    background-position: cover;
+    background-attachment: fixed;
+}
+h2 {
+    color:black
+}
+.container {
+    border: medium solid red;
+    max-width: max-content;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 18vh;
+}
