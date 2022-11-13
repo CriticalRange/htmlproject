@@ -45,14 +45,37 @@ document.getElementById("tenThousand").onclick = function () {
     document.getElementById("randomizerResult").innerHTML = "Result: " + randomizerTenThousand;
 }
 
-
-let newResult;
-
-
-document.getElementById("calcButton1").onclick = function() {
-    let oldResult = document.getElementById("calcResult").textContent;
-    newResult = oldResult.slice(oldResult.indexOf(" ") + 1) + 1;
-    document.getElementById("calcResult").innerHTML = "Result: " + newResult;
-    calcbutton1()
+let guessGameRandomizer = Math.floor(Math.random() * 30) + 1;
+document.getElementById("guessGameButton").onclick = function() {
+    
+    
+    userGuess = Number(document.getElementById("userGuess").value);
+    if (userGuess == guessGameRandomizer) {
+        document.getElementById("guessGameResult").innerHTML = "Result: You win!";
+    }
+    else if (userGuess < guessGameRandomizer) {
+        document.getElementById("guessGameResult").innerHTML = "Result: A bit higher!"
+    }
+    else if (userGuess > guessGameRandomizer) {
+        document.getElementById("guessGameResult").innerHTML = "Result: A little less lower!"
+    }
+    else {
+        document.getElementById("guessGameResult").innerHTML = "Result: You didn/'t type a number";
+    }
 }
-console.log(calcbutton1());
+
+let tempInput;
+let celciusIcon = String.fromCharCode(176);
+let fahrenheitIcon = String.fromCharCode(176) + "F";
+document.getElementById("tempConvertButton").onclick = function() {
+    if (document.getElementById("celciusButton").checked) {
+        tempInput = document.getElementById("tempInput").value;
+        tempInput = ((tempInput -32) * 5 / 9).toPrecision(2);
+        document.getElementById("tempResult").innerHTML = tempInput + celciusIcon;
+    }
+    else if (document.getElementById("fahrenheitButton").checked) {
+        tempInput = document.getElementById("tempInput").value;
+        tempInput = tempInput * 9 / 5 + 32;
+        document.getElementById("tempResult").innerHTML = tempInput + fahrenheitIcon;
+    }
+}
