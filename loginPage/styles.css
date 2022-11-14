@@ -1,35 +1,106 @@
 body {
-    background: linear-gradient(to bottom, turquoise, rgb(121, 10, 196));
+    background: linear-gradient(to bottom, turquoise, blue);
     background-position: cover;
     background-attachment: fixed;
 }
-h2 {
-    color: rgb(0, 217, 255);
-    text-transform: capitalize;
-    text-indent: 0px;
-    line-height: 5px;
-    font-size: xx-large;
-    font-family: 'Times New Roman', Times, serif;
+hr {
+    background-color: white;
 }
 .container {
-    background: linear-gradient(to bottom, turquoise, rgb(121, 10, 196));
+    background: linear-gradient(to bottom, turquoise, blue);
     border: medium solid blue;
     max-width: max-content;
     height: 60vh;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
+    position: relative;
     padding: 18vh;
     outline-style: outset;
     outline-width: medium;
     outline-color: rgb(25, 23, 173);
 }
-label {
+.loginContainer {
+    color: rgb(0, 217, 255);
+    text-transform: capitalize;
+    text-indent: 0px;
+    line-height: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.usernameContainer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: x-large;
     color: rgb(0, 217, 255);
     margin-left: 0px;
-    display: inline-block;
 }
-#rememberMeLabel {
+#usernameInput {
+    border-radius: 10px;
+    outline: 1px solid blue;
+}
+.passwordContainer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    color: rgb(0, 217, 255);
+    margin-left: 0px;
+}
+#passwordInput {
+    border-radius: 10px;
+    outline: 1px solid blue;
+}
+.rememberMeContainer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: normal;
+    color: rgb(0, 217, 255);
+    margin-left: 0px;
+}
+.loginButtonContainer {
+    color:rgb(0, 217, 255);
+    margin-left: 0px;
+}
+#loginButton {
+    color: turquoise;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: blue;
+    font-size: x-large;
+    margin-left: 0px;
+}
+.joinIcons {
+    font-size: xxx-large;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    float: bottom;
+}
+.fa-youtube {
+    color: red;
+}
+.fa-twitter {
+    color: turquoise;
+}
+.fa-android {
+    color: green;
+}
+.fa-facebook {
+    color: #4267B2;
+}
+.fa-github {
+    color: black;
+}
+#aofyt:hover, #aofyt:focus, #aofyt:active, #aofyt:visited, #aofyt:link {
+    text-decoration: none;
+}
+#aoftw:hover, #aoftw:focus, #aoftw:active, #aoftw:visited, #aoftw:link {
+    text-decoration: none;
+}
+#aofan:hover, #aofan:focus, #aofan:active, #aofan:visited, #aofan:link {
+    text-decoration: none;
+}
+#aoffb:hover, #aoffb:focus, #aoffb:active, #aoffb:visited, #aoffb:link {
+    text-decoration: none;
+}
+#aofgh:hover, #aofgh:focus, #aofgh:active, #aofgh:visited, #aofgh:link {
+    text-decoration: none;
 }
